@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: hsl(0 , 0% , 95%);
+    padding: 100px;
+    margin-top: 10px;
+}
+#Calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0 , 0% , 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0 , 0% , 20%);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0 , 0% , 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0 , 0% , 40%);
+}
+/* button:active{
+    background-color: hsl(0 , 0% , 50%);
+} */
+.operator-btn {
+    background-color: hsl(35 , 100% , 55%);
+}
+.operator-btn:hover {
+    background-color: hsl(35 , 100% , 65%);
+}
+/* .operator-btn:active {
+    background-color: hsl(35 , 100% , 75%);
+} */
+/* 
+@media (max-width: 768px) {
+    body {
+      padding: 20px;
+      margin-top: 100px;
+    }
+    #Calculator {
+      max-width: 100%;
+      border-radius: 0;
+      
+    }
+    #keys {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      padding: 15px;
+    }
+  }
+   */
+   /* Default styles */
+
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+      height: 70%; /* Adjust the height as needed */
+      align-items: flex-start; /* Change alignment for smaller screens */
+      padding-top: 10px; /* Example adjustment for top padding */
+      padding-bottom: 10px; /* Example adjustment for bottom padding */
+      overflow-y: scroll; /* Add scroll if content overflows vertically */
+      box-sizing: border-box; /* Include padding in the height calculation */
+      text-align: center; /* Center align text on smaller screens if needed */
+    }
+  
+  #Calculator {
+      max-width: calc(100% -20px); /* Adjust the width as per your requirement */
+      border-radius :0 ; /* Remove border radius for a more modern look on small screens */ 
+  }
+  
+  #keys {
+     grid-template-columns : repeat(4 ,1fr); 
+     gap :5px ; 
+     padding :15px ; 
+  }
+  }  
